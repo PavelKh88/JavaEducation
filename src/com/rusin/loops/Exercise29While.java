@@ -2,28 +2,23 @@ package com.rusin.loops;
 
 public class Exercise29While {
     public static void main(String[] args) {
-        int a = 1;
-        int b = 1;
-        int count = 1;
-        int count1 = 11;
-        while (a <= 11){
-            while (b <= 11){
-                if(count == b && a != 1 && a != 11){
-                    System.out.print("@");
+        int count2 = 11;
+        int count1 = 1;
+        for (int i = 1; i <= 11 ; i++) {
+            for (int j = 1; j <= 11 ; j++) {
+                if (j == 11 || j == 1 || i == 1 || i == 11 || j == count1 || j == count2){
+                    System.out.print("*");
                 }
-                if(count1 == b && a != 1 && a != 11){
-                    System.out.print("$");
-                }
-                if(a == 1 || a == 11 || b ==1 || b == 11 ){
-                    System.out.print("&");
-                }
-             else {
-                System.out.print("#");
-                }
-             b++;
+
+               else{
+                   if(j == 11 || j ==1)continue;
+                   System.out.print(" ");
+               }
+
             }
             System.out.println();
-            a++;b = 1;count++;count1--;
+            count1++;count2--;
         }
+
     }
 }
