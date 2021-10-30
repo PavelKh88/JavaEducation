@@ -1,12 +1,10 @@
 package com.rusin.loops;
 
-public class Exersice2While {
+public class Exercise3While {
     public static void main(String[] args) {
-
-        int a = 20;
-        while(a < 40){
+        int a = -10;
+        while(a <= 10){
             System.out.println(a++);
-
         }
     }
 }

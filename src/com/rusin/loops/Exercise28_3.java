@@ -1,6 +1,6 @@
 package com.rusin.loops;
 
-public class Exersice28_3 {
+public class Exercise28_3 {
     public static void main(String[] args) {
         int a = 0;
             for (int j = 1; j <10 ; j++) {

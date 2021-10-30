@@ -2,7 +2,7 @@ package com.rusin.loops;
 
 import java.util.Scanner;
 
-public class Exersice16 {
+public class Exercise16 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

@@ -2,7 +2,7 @@ package com.rusin.loops;
 
 import java.beans.PropertyEditorSupport;
 
-public class Exersise5While {
+public class Exercise5While {
     public static void main(String[] args) {
         int b = 1;
         int a = 200 ;

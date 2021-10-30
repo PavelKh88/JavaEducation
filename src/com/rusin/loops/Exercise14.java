@@ -2,7 +2,7 @@ package com.rusin.loops;
 
 import java.util.Scanner;
 
-public class Exersice14 {
+public class Exercise14 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the intedger");

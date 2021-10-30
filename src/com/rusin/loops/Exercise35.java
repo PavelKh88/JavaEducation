@@ -1,6 +1,6 @@
 package com.rusin.loops;
 
-public class Exersice35 {
+public class Exercise35 {
     public static void main(String[] args) {
         int a = 1;
         int b = 1;
