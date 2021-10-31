@@ -13,7 +13,8 @@ public class Exercise18 {
             if(array[i] % 2 != 0){
                 array2[count2] = array[i];
                 System.out.println(array2[count2]);
-                count2++;
+                count2++ ;
+
             }
         }
     }
