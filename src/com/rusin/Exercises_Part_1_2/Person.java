@@ -13,7 +13,7 @@ public class Person {
    //Second name////////////////////////////
    private String secondName;
 
-   public void setLastName (String userSecondName){
+   public void setSecondName (String userSecondName){
        secondName = userSecondName;
    }
    public String getSecondName(){
