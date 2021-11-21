@@ -30,7 +30,7 @@ public class Exercise32 {
         double b;
         for (int i = 0; i < array.length; i++) {
             a = array[i] / array2[i];
-            b = (double) Math.round(a * 100) / 100;
+            b = (double) Math.round(a * 10) / 10;
             System.out.print( b + "   ");
         }
     }

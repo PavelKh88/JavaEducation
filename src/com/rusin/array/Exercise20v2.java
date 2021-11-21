@@ -15,7 +15,7 @@ public class Exercise20v2 {
         }
         for (int i:array3)
         {
-            System.out.println(i);
+            System.out.print(i);
         }
     }
 }
