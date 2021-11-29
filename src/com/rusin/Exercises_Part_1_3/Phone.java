@@ -3,27 +3,27 @@ package com.rusin.Exercises_Part_1_3;
 public class Phone {
    //Model//
     private String model;
+    private String memory;
+    private String weight;
+    private String amountOfSimSlot;
     public void setModel(String telModel){
      model = telModel; }
     public String getModel(){
      return model; }
    //Memory//
-    private int memory;
-    public void setMemory(int telMemory){
+    public void setMemory(String telMemory){
      memory = telMemory; }
-    public int getMemory(){
+    public String getMemory(){
      return memory;}
    //Weight//
-    private int weight;
-    public void setWeight(int telWeight){
+    public void setWeight(String  telWeight){
      weight = telWeight; }
-    public int getWeight(){
+    public String getWeight(){
      return weight; }
    //SimSlot//
-    private int amountOfSimSlot;
-    public void setAmountOfSimSlot(int telSimSlot){
+    public void setAmountOfSimSlot(String telSimSlot){
      amountOfSimSlot = telSimSlot; }
-    public int getAmountOfSimSlot(){
+    public String getAmountOfSimSlot(){
      return amountOfSimSlot; }
    //ScreenSize//
     private String screenSize;
@@ -44,16 +44,16 @@ public class Phone {
     public String getColor(){
      return color; }
  //BackCameraPixels//
-    private int backCameraPixels;
-    public void setBackCameraPixel(int telBCP){
+    private String  backCameraPixels;
+    public void setBackCameraPixel(String telBCP){
      backCameraPixels = telBCP; }
-    public int getBackCameraPixels(){
+    public String getBackCameraPixels(){
      return backCameraPixels; }
  //FrontCameraPixels//
-    private int frontCameraPixels;
-    public void setFrontCameraPixels(int telFCP){
+    private String frontCameraPixels;
+    public void setFrontCameraPixels(String telFCP){
      frontCameraPixels = telFCP; }
-    public int getFrontCameraPixels(){
+    public String getFrontCameraPixels(){
      return frontCameraPixels; }
  //maxPhotoResolution//
     private String maxPhotoResolution;
@@ -69,16 +69,16 @@ public class Phone {
     public String getMaxVideoResolution(){
      return maxVideoResolution; }
  //processorFrequency//
-    private double processorFrequency;
-    public void setProcessorFrequency(double telPF){
+    private String processorFrequency;
+    public void setProcessorFrequency(String telPF){
      processorFrequency = telPF; }
-    public double getProcessorFrequency(){
+    public String getProcessorFrequency(){
      return processorFrequency; }
  //processorCore//
-    private int processorCore;
-    public void setProcessorCore(int telPC){
+    private String processorCore;
+    public void setProcessorCore(String telPC){
      processorCore = telPC;}
-    public int getProcessorCore(){
+    public String getProcessorCore(){
      return processorCore; }
  //WiFiVersion//
     private String wiFiVersion;
@@ -87,15 +87,18 @@ public class Phone {
     public String getWiFiVersion(){
      return wiFiVersion; }
  //GPS//
-    private boolean gps;
-    public void setGps(boolean telGPS){
+    private String gps;
+    public void setGps(String telGPS){
      gps = telGPS; }
-    public boolean getGps(){
+    public String getGps(){
      return gps; }
  //powerTypeConnector//
-    private boolean powerTypeConnector;
-    public void setPowerTypeConnector(boolean telPTC){
+    private String powerTypeConnector;
+    public void setPowerTypeConnector(String telPTC){
      powerTypeConnector = telPTC; }
-    public boolean getPowerTypeConnector(){
+    public String getPowerTypeConnector(){
      return powerTypeConnector;}
+    ///////////
+
+
 }

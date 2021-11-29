@@ -1,4 +1,4 @@
-package com.rusin.StringExersise;
+package com.rusin.StringExerсise;
 
 public class Exercise_5 {
     public static void main(String[] args) {

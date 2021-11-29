@@ -3,6 +3,8 @@ package com.rusin.Exercises_Part_1_2;
 public class Person {
     //FirstName/////////////////////////////
    private String firstName;
+   private String secondName;
+    private String dateOfBirsday;
 
    public void setFirstName (String userFirstName){
        firstName = userFirstName;
@@ -11,7 +13,6 @@ public class Person {
        return firstName;
    }
    //Second name////////////////////////////
-   private String secondName;
 
    public void setSecondName (String userSecondName){
        secondName = userSecondName;
@@ -20,7 +21,6 @@ public class Person {
        return secondName;
    }
    //Date of birsday////////////////////////
-    private String dateOfBirsday;
 
    public void setDateOfBirsday (String userDateOfBirsday){
        dateOfBirsday = userDateOfBirsday;

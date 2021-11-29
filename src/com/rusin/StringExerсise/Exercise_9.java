@@ -1,4 +1,4 @@
-package com.rusin.StringExersise;
+package com.rusin.StringExerсise;
 
 import java.util.Arrays;
 
