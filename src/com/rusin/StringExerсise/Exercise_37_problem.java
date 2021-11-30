@@ -20,6 +20,7 @@ public class Exercise_37_problem {
 
                 array2[count3] = count2;
                 count3++;
+
             }
         }
         for (int i = 0; i < array.length; i++) {
