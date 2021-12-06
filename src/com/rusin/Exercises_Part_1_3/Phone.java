@@ -2,10 +2,16 @@ package com.rusin.Exercises_Part_1_3;
 
 public class Phone {
    //Model//
+    private String screenSize;
+    private String powerTypeConnector;
     private String model;
     private String memory;
     private String weight;
     private String amountOfSimSlot;
+    private String color;
+    private String screenResolution;
+    private String frontCameraPixels;
+    private String  backCameraPixels;
     public void setModel(String telModel){
      model = telModel; }
     public String getModel(){
@@ -26,31 +32,26 @@ public class Phone {
     public String getAmountOfSimSlot(){
      return amountOfSimSlot; }
    //ScreenSize//
-    private String screenSize;
     public void setScreenSize(String telScreenSize){
      screenSize = telScreenSize; }
     public String getScreenSize(){
      return screenSize; }
   //ScreenResolution//
-    private String screenResolution;
     public void setScreenResolution(String telScreenResolution){
      screenResolution = telScreenResolution; }
     public String getScreenResolution(){
      return screenResolution; }
   //Color//
-    private String color;
     public void setColor(String telColor){
      color = telColor; }
     public String getColor(){
      return color; }
  //BackCameraPixels//
-    private String  backCameraPixels;
     public void setBackCameraPixel(String telBCP){
      backCameraPixels = telBCP; }
     public String getBackCameraPixels(){
      return backCameraPixels; }
  //FrontCameraPixels//
-    private String frontCameraPixels;
     public void setFrontCameraPixels(String telFCP){
      frontCameraPixels = telFCP; }
     public String getFrontCameraPixels(){
@@ -93,7 +94,6 @@ public class Phone {
     public String getGps(){
      return gps; }
  //powerTypeConnector//
-    private String powerTypeConnector;
     public void setPowerTypeConnector(String telPTC){
      powerTypeConnector = telPTC; }
     public String getPowerTypeConnector(){

@@ -12,7 +12,7 @@ public class Exercise_39_problem {
         }
         System.out.println(str1);
         System.out.println(str1.length());
-        char[] array2 = str.toCharArray();// Why is the whole array here
+        char[] array2 = str1.toCharArray();// Why is the whole array here
         for (int i = 0; i < array2.length; i++) {
 
             System.out.print((int) array2[i] + " ");

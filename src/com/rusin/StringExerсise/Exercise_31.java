@@ -4,7 +4,6 @@ public class Exercise_31 {
     public static void main(String[] args) {
         String str = ("Black souls wear white shirts");
         char[] array = str.toCharArray();
-        int count = 0 ;
         for (int i = 0; i < array.length ; i++) {
             if(array[i] == ' ') {
                 array[i - 2] = Character.toUpperCase(array[i - 1]);
