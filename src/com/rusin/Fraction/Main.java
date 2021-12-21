@@ -1,4 +1,4 @@
-package com.rusin.Exercises_Part_1_8_Problem;
+package com.rusin.Fraction;
 
 public class Main {
     public static void main(String[] args) {
