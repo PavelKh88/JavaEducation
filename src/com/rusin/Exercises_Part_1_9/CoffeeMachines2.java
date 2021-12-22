@@ -15,5 +15,10 @@ public class CoffeeMachines2 extends CoffeeMachine {
         super.statusCM();
         System.out.println("Sugar is : " + sugar);
     }
+    @Override
+    public void cappuccino(){
+        super.cappuccino();
+        sugar = 1;
+    }
 
 }

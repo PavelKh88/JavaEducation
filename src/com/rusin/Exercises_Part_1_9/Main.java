@@ -15,6 +15,8 @@ public class Main {
         v1.statusCM();
         System.out.println("||||||||||||||||||||||||||||||||||||||||");
         CoffeeMachines2 v2 = new CoffeeMachines2();
+        v2.onCM();
+        v2.cappuccino();
         v2.statusCM();
     }
 }
