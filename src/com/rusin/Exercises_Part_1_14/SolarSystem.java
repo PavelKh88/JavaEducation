@@ -40,7 +40,7 @@ public class SolarSystem {
         Planet neptune = new Planet();
             neptune.setName("Neptune");
             neptune.setVolume("7,618E9 км²");
-            neptune.setWeight("1,024E26 кг");
+            neptune.setWeight("1,024E26 т");
             neptune.setDistanceFromTheStar("4,495E9 км");
         Star sun = new Star();
         sun.setName("The Sun");

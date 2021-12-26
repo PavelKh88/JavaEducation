@@ -114,12 +114,10 @@ public class CoffeeMachine {
                         grindingDegree = 1;
                         preWetting = true;
                         preheatingCups = true;
-                    }
-                    else {
+                    } else {
                         System.out.println("Milk volume is Low, Add Milk!!!");
                     }
-                }
-                else {
+                } else {
                     System.out.println("Water temperature is not normal!!!");
                 }
             }

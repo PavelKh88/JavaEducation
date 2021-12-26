@@ -1,9 +1,9 @@
 package com.rusin.Exercises_Part_1_8_v1;
 
 public class Television {
- private    boolean powerTV = true;
- private    int volume = 0;
-    private    int channel = 0;
+    private boolean powerTV = true;
+    private int volume = 0;
+    private int channel = 0;
 
     public boolean getStatusTV() {
         return powerTV;
@@ -28,28 +28,29 @@ public class Television {
     public void setChannel(int channel) {
         this.channel = channel;
     }
-    void powerOn(){
+
+    public void powerOn() {
         setStatusTV(true);
     }
-    void powerOff(){
+
+    public void powerOff() {
         setStatusTV(false);
     }
-    void changeVolume (int newVolume){
-        if(powerTV == true){
-            if(newVolume >= 0 && newVolume <=30){
+
+    public void changeVolume (int newVolume) {
+        if (powerTV) {
+            if (newVolume >= 0 && newVolume <= 30) {
                 volume = newVolume;
-            }
-            else{
+            } else {
                 System.out.println("Change Volume 0-30;");
             }
 
-        }
-        else{
+        } else {
             System.out.println("PowerTV is Off!!!");
         }
     }
     void changeChannel(int newChannel){
-        if(powerTV == true){
+        if(powerTV){
             if(newChannel >= 0 && newChannel <= 50){
                 channel = newChannel;
             }
