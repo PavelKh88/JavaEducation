@@ -11,8 +11,10 @@ public class Test {
    Window window2 = new Window("200 x 200", "Brown", "window2");
    Window window3 = new Window("150 x 200", "White", "window3");
    Window window4 = new Window("150 x 200", "White", "window4");
-   Door door1 = new Door("200 x 60", "White", "door1");
-   Door door2 = new Door("200 x 70", "Brown", "door2");
+
+   Door door1 = new Door(new Size(60, 200), "White", "door1");
+
+   Door door2 = new Door(new Size(70, 200), "Brown", "door2");
   classRoom1.addWalls(wall1);
   classRoom1.addWalls(wall2);
   classRoom1.addWalls(wall3);
@@ -23,8 +25,8 @@ public class Test {
    wall3.addDoors(door1);
    wall4.addWindows(window2);
    wall4.addDoors(door2);
-  // classRoom1.classRoomInfo();//Не получаеться красиво вывести Инфо КлассРум
    wall3.wallInfo();
+        System.out.println(classRoom1);
 
 
 

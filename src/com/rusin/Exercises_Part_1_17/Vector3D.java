@@ -36,19 +36,24 @@ public class Vector3D {
         this.z = z;
     }
 
-    public Vector3D add(Vector3D v2 ) {
-        return new Vector3D(this.x + v2.x,this.y + v2.y, this.z + v2.z );
+    public Vector3D add(Vector3D vector) {
+        return new Vector3D(this.x + vector.x,this.y + vector.y, this.z + vector.z);
     }
-    public Vector3D subtraction(Vector3D v2 ) {
-        return new Vector3D(this.x - v2.x,this.y - v2.y, this.z - v2.z );
-    }
-    public  double lenght () {
-         double lenghtResult = Math.sqrt((x * x) + (y * y) + (z * z));
-        return lenghtResult;
-    }
-    @Override
 
-    public String toString(){
-        return " X : " + x + "      Y : " + y + "     Z : " + z ;
+    public Vector3D subtraction(Vector3D v2) {
+        return new Vector3D(this.x - v2.x,this.y - v2.y, this.z - v2.z);
+    }
+
+    public double length() {
+        return Math.sqrt( (x * x) + (y * y) + (z * z) );
+    }
+
+    @Override
+    public String toString() {
+        return "Vector3D{" +
+                "x=" + x +
+                ", y=" + y +
+                ", z=" + z +
+                '}';
     }
 }

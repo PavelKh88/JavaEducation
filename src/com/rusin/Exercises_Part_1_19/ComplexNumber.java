@@ -1,8 +1,8 @@
 package com.rusin.Exercises_Part_1_19;
 
 public class ComplexNumber {
-    int realPart;
-    int imaginaryPart;
+    private int realPart;
+    private int imaginaryPart;
 
     public int getRealPart() {
         return realPart;

@@ -1,7 +1,7 @@
 package com.rusin.Exercises_Part_1_16;
 
 public class Door {
-    private String size;
+    private Size size;
     private String color;
     private String name;
 
@@ -13,11 +13,11 @@ public class Door {
         this.name = name;
     }
 
-    public String getSize() {
+    public Size getSize() {
         return size;
     }
 
-    public void setSize(String size) {
+    public void setSize(Size size) {
         this.size = size;
     }
 
@@ -28,7 +28,7 @@ public class Door {
     public void setColor(String color) {
         this.color = color;
     }
-    public Door (String size, String color, String name) {
+    public Door (Size size, String color, String name) {
         this.color = color;
         this.size = size;
         this.name = name;

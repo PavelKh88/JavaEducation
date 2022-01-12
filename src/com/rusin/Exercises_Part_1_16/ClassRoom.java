@@ -21,16 +21,12 @@ public class ClassRoom {
     public ClassRoom(String name) {
         this.name = name;
     }
-    public void classRoomInfo() {
 
-
-            System.out.println("Wall - " + walls);
-
-
-
-
+    @Override
+    public String toString() {
+        return "ClassRoom{" +
+                "walls=" + walls +
+                ", name='" + name + '\'' +
+                '}';
     }
-
-
-
 }
