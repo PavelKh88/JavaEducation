@@ -1,8 +1,8 @@
 package com.rusin.Exercises_Part_1_20;
 
-import java.lang.reflect.Field;
-
 public class Resume {
+
+
     private String fullName;
     private String sex;
     private DayOfBirth dayOfBirth;
@@ -19,6 +19,23 @@ public class Resume {
         this.wishedSalary = wishedSalary;
     }
 
+    public int chekNull() {
+        if(fullName == null) {
+            return 0 ;
+        }
+        if(sex == null) {
+            return 0 ;
+        }
+        if(dayOfBirth == null) {
+            return 0 ;
+        }
+        if(skills == null) {
+            return 0 ;
+        }
+        else{
+            return 1;
+        }
+    }
 
     @Override
     public String toString() {
@@ -41,14 +58,6 @@ public class Resume {
             this.day = day;
             this.month = month;
             this.year = year;
-        }
-
-        public void abc (Resume resume1){
-           Class clazz = resume1.getClass();
-            Field [] array = clazz.getDeclaredFields();
-            for(Field f : array) {
-                System.out.println(f);
-            }
         }
 
         @Override
