@@ -19,6 +19,10 @@ public class Resume {
         this.wishedSalary = wishedSalary;
     }
 
+//    Person(String name){
+//        this.name = Objects.requireNonNull(name, "Name must not be null");
+//    }
+
     public int chekNull() {
         if(fullName == null) {
             return 0 ;
