@@ -16,6 +16,18 @@ public class Student extends Person {
 
     }
 
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public double getAverageRate() {
+        return averageRate;
+    }
+
     @Override
     public String toString() {
 

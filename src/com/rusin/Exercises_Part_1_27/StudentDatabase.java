@@ -1,6 +1,6 @@
 package com.rusin.Exercises_Part_1_27;
 
-import javax.sound.midi.Soundbank;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,20 +18,15 @@ public class StudentDatabase {
     public void setStudents(List<Student> students) {
         this.students = students;
     }
-//   for (Student student : students) {
-//              if(student.getFirstName() == firstName) {
-//                System.out.println("Есть студент с таким именем , студент под индексом " + student);
-//                return;
-//              }
-//            }
+
     public void findByFirstName(String firstName) {
             for (int i = 0; i < students.size(); i++) {
                 if (students.get(i).getFirstName() == firstName) {
                     System.out.println("A student with this name is found and located by index = " + i);
-                    return;
+//                    return;
                 }
             }
-                    System.err.println("Student with that name not found");
+//                    System.err.println("Student with that name not found");
         }
 
     public void findByLastName(String lastName) {
@@ -40,9 +35,53 @@ public class StudentDatabase {
                 System.out.println("A student with this Last name is found and located by index = " + i);
             }
         }
-                    System.err.println("Student with that Last name not found");
-
+//                    System.err.println("Student with that Last name not found");
     }
+    public void findBySex(String sex) {
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getSex() == sex) {
+                System.out.println("A student with this Sex is found and located by index = " + i);
+//                    return;
+            }
+        }
+//                    System.err.println("Student with that Sex not found");
+    }
+    public void findBySpeciality(String speciality) {
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getSpeciality() == speciality) {
+                System.out.println("A student with this speciality is found and located by index = " + i);
+//                    return;
+            }
+        }
+//                    System.err.println("Student with that speciality not found");
+    }
+    public void findByDepartment(String department) {
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getDepartment() == department) {
+                System.out.println("A student with this department is found and located by index = " + i);
+//                    return;
+            }
+        }
+//                    System.err.println("Student with that department not found");
+    }
+
+    public void findByAverageRate(double averageRate) {
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getAverageRate() == averageRate) {
+                System.out.println("A student with this averageRate is found and located by index = " + i);
+//                    return;
+            }
+        }
+//                    System.err.println("Student with that averageRate not found");
+    }
+
+    public void findAll() {
+        for (Student student : students) {
+            System.out.println("Student located by index " + students.indexOf(student) + " " + student);
+
+        }
+    }
+
 
 
 

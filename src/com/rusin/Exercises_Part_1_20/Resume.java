@@ -1,5 +1,7 @@
 package com.rusin.Exercises_Part_1_20;
 
+import java.util.Objects;
+
 public class Resume {
 
 
@@ -24,16 +26,16 @@ public class Resume {
 //    }
 
     public int chekNull() {
-        if(fullName == null) {
+        if(Objects.isNull(fullName)) {
             return 0 ;
         }
-        if(sex == null) {
+        if(Objects.isNull(sex)) {
             return 0 ;
         }
-        if(dayOfBirth == null) {
+        if(Objects.isNull(dayOfBirth)) {
             return 0 ;
         }
-        if(skills == null) {
+        if(Objects.isNull(skills)) {
             return 0 ;
         }
         else{
