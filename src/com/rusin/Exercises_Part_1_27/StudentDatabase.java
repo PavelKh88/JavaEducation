@@ -2,6 +2,7 @@ package com.rusin.Exercises_Part_1_27;
 
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class StudentDatabase {
@@ -19,68 +20,68 @@ public class StudentDatabase {
         this.students = students;
     }
 
-    public void findByFirstName(String firstName) {
+    public List<Student> findByFirstName(String firstName) {
+           List<Student> studentsByFirstName = new LinkedList<>();
             for (int i = 0; i < students.size(); i++) {
-                if (students.get(i).getFirstName() == firstName) {
-                    System.out.println("A student with this name is found and located by index = " + i);
-//                    return;
+                if (students.get(i).getFirstName().equals(firstName)) {
+                    studentsByFirstName.add(students.get(i));
                 }
             }
-//                    System.err.println("Student with that name not found");
+               return studentsByFirstName;
         }
 
-    public void findByLastName(String lastName) {
+    public List<Student> findByLastName(String lastName) {
+        List<Student> studentsByLastName = new LinkedList<>();
         for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getLastName() == lastName) {
-                System.out.println("A student with this Last name is found and located by index = " + i);
+            if (students.get(i).getLastName().equals(lastName)) {
+               studentsByLastName.add(students.get(i));
             }
         }
-//                    System.err.println("Student with that Last name not found");
+        return studentsByLastName;
+
     }
-    public void findBySex(String sex) {
+    public List<Student> findBySex(String sex) {
+        List<Student> studentsBySex = new LinkedList<>();
         for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getSex() == sex) {
-                System.out.println("A student with this Sex is found and located by index = " + i);
-//                    return;
+            if (students.get(i).getSex().equals(sex)) {
+                studentsBySex.add(students.get(i));
             }
         }
-//                    System.err.println("Student with that Sex not found");
+        return studentsBySex;
     }
-    public void findBySpeciality(String speciality) {
+    public List<Student> findBySpeciality(String speciality) {
+        List<Student> studentsBySpeciality = new LinkedList<>();
         for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getSpeciality() == speciality) {
-                System.out.println("A student with this speciality is found and located by index = " + i);
-//                    return;
+            if (students.get(i).getSpeciality().equals(speciality)) {
+                studentsBySpeciality.add(students.get(i));
             }
         }
-//                    System.err.println("Student with that speciality not found");
+        return studentsBySpeciality;
     }
-    public void findByDepartment(String department) {
+    public List<Student> findByDepartment(String department) {
+        List<Student> studentsByDepartment = new LinkedList<>();
         for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getDepartment() == department) {
-                System.out.println("A student with this department is found and located by index = " + i);
-//                    return;
+            if (students.get(i).getDepartment().equals(department)) {
+              studentsByDepartment.add(students.get(i));
             }
         }
-//                    System.err.println("Student with that department not found");
+        return studentsByDepartment;
     }
 
-    public void findByAverageRate(double averageRate) {
+    public List<Student> findByAverageRate(double averageRate) {
+        List<Student> studentsByAverageRate = new LinkedList<>();
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getAverageRate() == averageRate) {
-                System.out.println("A student with this averageRate is found and located by index = " + i);
-//                    return;
+               studentsByAverageRate.add(students.get(i));
             }
         }
-//                    System.err.println("Student with that averageRate not found");
+        return studentsByAverageRate;
     }
 
-    public void findAll() {
-        for (Student student : students) {
-            System.out.println("Student located by index " + students.indexOf(student) + " " + student);
-
+    public List<Student> findAll() {
+        return students;
         }
-    }
+
 
 
 

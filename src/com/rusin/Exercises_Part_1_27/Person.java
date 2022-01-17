@@ -1,6 +1,6 @@
 package com.rusin.Exercises_Part_1_27;
 
-public class Person {
+public  class  Person {
     private String firstName;
     private String lastName;
     private String sex;

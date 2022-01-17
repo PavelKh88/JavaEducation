@@ -6,13 +6,18 @@ public class Resume {
 
 
     private String fullName;
-    private String sex;
+    private Sex sex;
     private DayOfBirth dayOfBirth;
     private double yearsOfExperience;
     private String skills;
     private double wishedSalary;
 
-    public Resume(String fullName, String sex, DayOfBirth dayOfBirth, double yearsOfExperience, String skills, double wishedSalary) {
+    public Resume(String fullName,
+                  Sex sex,
+                  DayOfBirth dayOfBirth,
+                  double yearsOfExperience,
+                  String skills,
+                  double wishedSalary) {
         this.fullName = fullName;
         this.sex = sex;
         this.dayOfBirth = dayOfBirth;

@@ -17,7 +17,7 @@ public class Person {
 
     public void giveApple(Person person) {
         person.apple = this.apple ;
-        this.apple = null ;
+        this.apple = null ;       //Что можно сюда передать вместо null?
 
     }
 

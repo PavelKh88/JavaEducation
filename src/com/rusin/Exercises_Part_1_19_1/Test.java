@@ -12,7 +12,10 @@ public class Test {
         bookShelf1.addBook(b3);
         System.out.println(bookShelf1);
         Book b4 = new Book("War II", 1000, 4000);
-        bookShelf1.addBook(b4);
+        if (!bookShelf1.addBook(b4)) {
+
+        }
+
 
     }
 }

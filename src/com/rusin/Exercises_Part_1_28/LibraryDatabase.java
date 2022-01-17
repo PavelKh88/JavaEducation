@@ -65,8 +65,6 @@ public class LibraryDatabase {
         }
     }
 
-
-
     @Override
     public String toString() {
         return "LibraryDatabase{" +

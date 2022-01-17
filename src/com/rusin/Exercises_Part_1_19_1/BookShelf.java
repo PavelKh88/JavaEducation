@@ -4,19 +4,20 @@ import java.util.*;
 
 public class BookShelf {
     private List<Book> books = new ArrayList<>();
+    //in cm
     private int shelfWidth = 2000;
+    //in cm
     private int freeSpaceWidth = 2000;
-    private  int busySpace;
+    private int busySpace;
 
-    public void addBook(Book book) {
-        if(freeSpaceWidth >= book.getWidth()) {
+    public boolean addBook(Book book) {
+        if (freeSpaceWidth >= book.getWidth()) {
             books.add(book);
             freeSpaceWidth -= book.getWidth();
             busySpace += book.getWidth();
+            return true;
         }
-        else {
-            System.out.println("no free space to add a book !!!");
-        }
+        return false;
     }
 
     @Override
