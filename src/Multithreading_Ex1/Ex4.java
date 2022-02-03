@@ -45,84 +45,155 @@ class Thread1 extends Thread {
 
 class Thread2 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread3 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread4 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread5 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread6 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread7 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread8 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 class Thread9 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread10 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread11 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+         try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread12 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread13 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread14 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
 class Thread15 extends Thread {
     public void run() {
-        System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+        try {
+            System.out.println("Thread name " + Thread.currentThread().getName() + " generate : " + (int) (10 + Math.random() * 20));
+            sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
