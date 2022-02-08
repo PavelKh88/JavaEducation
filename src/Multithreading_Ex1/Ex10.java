@@ -1,7 +1,7 @@
 package Multithreading_Ex1;
 
 public class Ex10 {
-    public static volatile int balance = 1000;
+    public static int balance = 0;
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println(balance);
@@ -17,18 +17,22 @@ public class Ex10 {
 
 class Deposit extends Thread {
     public void run() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 50000; i++) {
+           synchronized (Ex10.class) {
             Ex10.balance += 10;
-            System.out.println("Deposit + 10 ");
+          }
+           // System.out.println("Deposit + 10 ");
         }
     }
 }
 
 class Withdraw extends Thread {
     public void run() {
-        for (int i = 0; i < 5 ; i++) {
-            Ex10.balance -= 5;
-            System.out.println("Withdraw - 10 ");
+        for (int i = 0; i < 50000 ; i++) {
+           synchronized (Ex10.class) {
+               Ex10.balance -= 10;
+           }
+          //  System.out.println("Withdraw - 10 ");
         }
     }
 }
