@@ -8,15 +8,15 @@ import java.util.concurrent.Executors;
 public class Test {
     public static void main(String[] args) {
         Car car1 = new Car("Porsche");
-        Car car2 = new Car("Porsche");
-            car1.start();
-            car2.start();
-
-        Thread1 thread1 = new Thread1();
-        Thread1 thread2 = new Thread1();
+        Car car2 = new Car("Fiat");
+        Thread thread1 = new Thread(car1);
+        Thread thread2 = new Thread(car2);
         thread1.start();
         thread2.start();
 
+        }
+
+
 
     }
-}
+
