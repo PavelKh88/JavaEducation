@@ -2,9 +2,14 @@ package com.rusin.MyTests;
 
 import java.util.*;
 
-public class Value implements Runnable{
-    public static Integer value = 0;
-   List<Integer> valueSet = new ArrayList<>();
+public class CardGenerator implements Runnable{
+    private   Integer value = 0;
+    private  List<Integer> valueSet = new ArrayList<>();
+
+    public Integer getValue() {
+        return value;
+    }
+
     @Override
     public void run() {
             for (int i = 1; i <= 30; i++) {
@@ -14,7 +19,7 @@ public class Value implements Runnable{
         try {
             for (int i = 0; i < 30 ; i++) {
                 value = valueSet.get(i);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 System.out.println(value);
             }
 //                Thread.sleep(1000);

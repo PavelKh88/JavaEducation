@@ -7,7 +7,7 @@ public  class Auctioneer extends Thread{
     protected static Boolean sold ;
     public static Integer price = 0;
     @Override
-    public synchronized void run() {
+    public  void run() {
 
        Integer count = 1;
         for (int i = 500; i <= 5_000 ; i += 500 ) {
@@ -29,7 +29,6 @@ public  class Auctioneer extends Thread{
               } catch (InterruptedException e) {
                   e.printStackTrace();
               }
-
           }
 
       }
