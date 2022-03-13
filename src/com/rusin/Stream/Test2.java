@@ -7,11 +7,11 @@ import java.util.stream.Collectors;
 
 public class Test2 {
     public static void main(String[] args) {
-     Student st1 = new Student("Pavel", 'm', 22, 2,6.7);
-     Student st2 = new Student("Ivan", 'm', 28, 1,8.2);
-     Student st3 = new Student("Oksana", 'f', 25, 4,9.7);
-     Student st4 = new Student("Petr", 'm', 30, 5,8.0);
-     Student st5 = new Student("Maryia", 'f', 19, 1,7.8);
+     Student st1 = new Student("pavel", 'm', 22, 2,6.7);
+     Student st2 = new Student("ivan", 'm', 28, 1,8.2);
+     Student st3 = new Student("oksana", 'f', 25, 4,9.7);
+     Student st4 = new Student("petr", 'm', 30, 5,8.0);
+     Student st5 = new Student("maryia", 'f', 19, 1,7.8);
 
         List<Student> list = new ArrayList<>();
         list.add(st1);
@@ -19,10 +19,22 @@ public class Test2 {
         list.add(st3);
         list.add(st4);
         list.add(st5);
+        List<Student> list2 = new ArrayList<>();
+         list2 = list.stream().map(e -> {e.setName(e.getName().toUpperCase());
+                                return e;    }).filter(e -> e.getSex() == 'm').sorted((x,y) -> x.getAge()-y.getAge())
+                         .collect(Collectors.toList());
 
-        List<Student> list2 = list.stream().filter(el -> el.getAge() < 20).collect(Collectors.toList());
+
 
         System.out.println(list2);
+
+
+
+//        List<Student> list2 = list.stream().filter(el -> el.getAge() < 20).collect(Collectors.toList());
+//
+//        System.out.println(list2);
+//        list = list.stream().sorted((x , y) -> x.getName().compareTo(y.getName())).collect(Collectors.toList());
+//        System.out.println(list);
 
     }
 
