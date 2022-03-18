@@ -20,9 +20,9 @@ public class Test2 {
         list.add(st4);
         list.add(st5);
         List<Student> list2 = new ArrayList<>();
-         list2 = list.stream().map(e -> {e.setName(e.getName().toUpperCase());
+         Student firstStudent = list.stream().map(e -> {e.setName(e.getName().toUpperCase());
                                 return e;    }).filter(e -> e.getSex() == 'm').sorted((x,y) -> x.getAge()-y.getAge())
-                         .collect(Collectors.toList());
+                         .findFirst().get();
 
 
 
