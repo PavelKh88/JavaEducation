@@ -1,4 +1,4 @@
-package Arrays_2_0;
+package Stream_2_0;
 
 import java.util.ArrayList;
 import java.util.List;

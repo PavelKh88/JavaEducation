@@ -1,10 +1,8 @@
-package Arrays_2_0;
+package Stream_2_0;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Ex3 {
     public static void main(String[] args) {

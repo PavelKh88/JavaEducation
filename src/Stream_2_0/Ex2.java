@@ -1,6 +1,5 @@
-package Arrays_2_0;
+package Stream_2_0;
 
-import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

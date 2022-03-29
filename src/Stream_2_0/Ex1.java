@@ -1,16 +1,4 @@
-package Arrays_2_0;
-
-import com.rusin.array.Exercise1;
-
-import java.math.BigDecimal;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+package Stream_2_0;
 
 public class Ex1 {
     public static void main(String[] args) {
