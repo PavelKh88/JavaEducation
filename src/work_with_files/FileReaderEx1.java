@@ -7,6 +7,7 @@ import java.io.IOException;
 public class FileReaderEx1 {
     public static void main(String[] args) throws IOException {
         FileReader reader = null;
+        System.out.println("1");
         try {
             reader = new FileReader("text2.txt");
             int character;

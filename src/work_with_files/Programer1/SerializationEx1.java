@@ -10,6 +10,10 @@ public class SerializationEx1 {
         employees.add("Zaur");
         employees.add("Sasha");
         employees.add("Andrey");
+        employees.add("Andrey1");
+        employees.add("Andrey2");
+        employees.add("Andrey3");
+        Car car = new Car("Mersedes","white");
 
         try(ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("employees.bin"));
         )
