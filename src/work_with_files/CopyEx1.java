@@ -4,6 +4,7 @@ import java.io.*;
 
 public class CopyEx1 {
     public static void main(String[] args) {
+
         try(BufferedReader reader = new BufferedReader(new FileReader("text2.txt"));
             BufferedWriter writer = new BufferedWriter(new FileWriter("text3.txt"))) {
 //            int character;

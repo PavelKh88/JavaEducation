@@ -1,6 +1,6 @@
 package com.rusin.Multithreading;
 
-import sun.java2d.loops.GraphicsPrimitive;
+
 
 public class Ex6 implements Runnable {
     @Override
